@@ -17,13 +17,13 @@
 .caixa-principal h2 {
     position: fixed;
     top: 0px;
-    left: 30px;
+    left: 0px;
     background-color: #191919;
     z-index: 1000;
-    width: 50%;
+    width: 60%;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 25px;
+    padding-top: 3px;
 }
 
 nav {
@@ -43,7 +43,7 @@ nav {
 
 .portfolio{
     color: #ffffff;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 500px;
 }
 
