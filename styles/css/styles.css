@@ -14,7 +14,25 @@
     background-color: #191919;
 }
 
+.caixa-principal h2 {
+    position: fixed;
+    top: 0px;
+    left: 30px;
+    background-color: #191919;
+    z-index: 1000;
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
 nav {
+    position: fixed;
+    top: -1px;
+    right: 0;
+    background-color: #191919;
+    z-index: 1000;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -234,4 +252,117 @@ footer p {
 .m-15px-tb {
     margin-top: 15px;
     padding-bottom: 15px;
+}
+
+/* Adicione estas regras para tornar o site responsivo */
+
+@media screen and (max-width: 768px) {
+    .caixa-principal {
+        height: auto;
+        background-image: none;
+        padding-top: 50px; /* Ajuste conforme necessário */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .portfolio {
+        font-size: 50px;
+        margin-top: top;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .meu-nome {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .meu-nome h1 {
+        font-size: 50px;
+        margin-bottom: auto;
+    }
+
+    .meu-nome h3 {
+        font-size: 25px;
+        margin-bottom: auto;
+    }
+
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        margin: 20px 0;
+    }
+
+    section div h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    section div p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    section div button {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .projetos h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .novocard {
+        margin-bottom: 30px;
+    }
+
+    .novocard h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .novocard p {
+        margin-bottom: 20px;
+    }
+
+    footer h5 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .social a {
+        height: 40px;
+        width: 40px;
+    }
+
+    .social img {
+        height: 20px;
+    }
 }
